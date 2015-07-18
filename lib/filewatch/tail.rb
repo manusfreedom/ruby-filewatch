@@ -285,8 +285,8 @@ module FileWatch
       @sincedb_last_write = now
       @sincedb_write_pending = false
       @sincedb_writing = false
-
-      System.gc()
+      #it will raise error uninitialized contant FILEWATCH::TAIL:SYSTEM
+      #System.gc()
     end # def _sincedb_write
 
     public
